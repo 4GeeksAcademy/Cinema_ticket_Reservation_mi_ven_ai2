@@ -37,3 +37,4 @@ Cinema seat reservation simulator built with TypeScript + Vite, rendered in the 
 
 - Type check: `npm run typecheck`
 - Production build: `npm run build`
+- Production App start `npm start`
