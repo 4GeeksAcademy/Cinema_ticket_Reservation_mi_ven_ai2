@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: /sitemap.xml
+
+# GEO compatibility hint
+# LLM-friendly content file available at /llms.txt

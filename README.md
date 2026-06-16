@@ -1,4 +1,4 @@
-# Hello World with Typescript
+# Cinema Seat Reservations
 
 <!-- hide -->
 > By [@ehiber](https://github.com/ehiber) and contributors at [4Geeks Academy](https://4geeksacademy.com/)
@@ -8,7 +8,16 @@
 
 *Estas instrucciones estan disponibles en [espanol](./README.es.md).*
 <!-- endhide -->
-Start coding a TypeScript/HTML/CSS website in 30 seconds by opening this template using 4Geeks' [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/typescript-hello) or locally on your computer.
+Interactive cinema seat reservation simulator built with TypeScript, Vite, and Tailwind CSS.
+
+## What this site does
+
+- Simulates an 8x10 cinema seating matrix.
+- Lets users reserve seats from row/column inputs.
+- Supports direct seat selection by clicking seats in the grid.
+- Optionally allows unreserving occupied seats.
+- Shows live occupied/available counters.
+- Detects and displays the first adjacent available seat pair.
 
 ## Before you begin
 
@@ -18,7 +27,7 @@ Install the packages by typing:
 npm install
 ```
 
-## How do I run my website to see live changes?
+## How do I run the website to see live changes?
 
 Type on the command line:
 
@@ -56,17 +65,20 @@ npm run console
 
 This command is already wired to `./src/main.ts`.
 
-## Where do I write my code?
+## Where is the main project logic?
 
-It depends on the language:
+Core files currently used by the app:
 
-- `./src/main.ts` for TypeScript logic.
-- `./src/style.css` for styles (Tailwind CSS v4 is already imported).
-- `./index.html` for the HTML shell.
+- `./index.html` for the app shell and metadata.
+- `./src/main.ts` for reservation logic and UI behavior.
+- `./src/style.css` for Tailwind CSS import.
+- `./src/vite-env.d.ts` for Vite TypeScript types.
 
-You can add more files as needed, just make sure to import them from `main.ts`.
+## Project docs
 
-Note: if you can see the "Hello Rigo" card and the message "If you can see this, Tailwind is working.", Tailwind is configured correctly.
+- `./documents/context.md`
+- `./documents/flow-diagram.md`
+- `./documents/technical-demo-guide.md`
 
 ## Troubleshooting
 
@@ -78,16 +90,6 @@ If changes still don't appear, refresh clearing cache:
 
 - Mac: `Cmd + Shift + R`
 - Windows/Linux: `Ctrl + Shift + R`
-
-## How do I include more images in my project?
-
-Add them inside `./public` and reference them in HTML using `/your-image-name.ext`.
-
-Example:
-
-```html
-<img src="/rigo-baby.jpg" alt="Rigo" />
-```
 
 ## How do I include more TypeScript files?
 

@@ -2,24 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World with Typescript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Cinema Seat Reservations is a mobile-first TypeScript simulator that demonstrates 8x10 matrix seat reservation logic with clear console output." />
+    <meta name="keywords" content="cinema seat reservation,typescript,matrix algorithm,cli simulation,mobile-first" />
+    <meta name="author" content="Venkata Cinema" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="ICBM" content="20.5937, 78.9629" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cinema Seat Reservations" />
+    <meta property="og:description" content="Mobile-first TypeScript simulator for cinema seat reservations with matrix-based logic and adjacent-seat detection." />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="Cinema Seat Reservations" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cinema Seat Reservations" />
+    <meta name="twitter:description" content="TypeScript cinema reservation simulator with functional matrix logic and console-first output." />
+    <link rel="canonical" href="/" />
+    <link rel="alternate" href="/" hreflang="en" />
+    <title>Cinema Seat Reservations</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Cinema Seat Reservations",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "description": "Mobile-first TypeScript simulator for cinema seat reservations using an 8x10 matrix and functional programming constraints.",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@type": "Organization",
+          "name": "Venkata Cinema"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
-  <body class="min-h-screen bg-slate-100 text-slate-900">
-    <main class="mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center gap-6 p-6">
-      <h1 class="text-4xl font-bold tracking-tight">Hello World with Typescript</h1>
-
-      <section class="w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <img
-          src="/rigo-baby.jpg"
-          alt="Hello Rigo"
-          class="h-64 w-full bg-slate-50 object-contain p-2"
-        />
-        <div class="p-5">
-          <h2 class="text-xl font-semibold text-slate-900">Hello Rigo</h2>
-          <p id="app" class="mt-2 text-sm text-slate-600"></p>
-        </div>
-      </section>
+  <body class="min-h-screen bg-white text-red-700">
+    <header class="mx-auto max-w-5xl px-4 pt-4 text-center sm:px-6 sm:pt-6">
+      <h1 class="m-0 text-2xl font-bold leading-tight sm:text-3xl">Venkata Cinema</h1>
+      <p class="mt-2 text-base leading-relaxed text-red-600">
+        Cinema Seat Reservations
+      </p>
+    </header>
+    <main id="main-content" class="mx-auto max-w-5xl px-4 py-4 sm:px-6 sm:py-6">
+      <div id="app"></div>
+      <noscript>
+        <section class="mt-3 rounded border border-slate-300 bg-white p-3 text-base leading-relaxed text-slate-700">
+          This app works best with JavaScript enabled. It simulates cinema reservations with an 8x10 seat matrix
+          and reports occupied, available, and adjacent seat availability.
+        </section>
+      </noscript>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>

@@ -1,4 +1,4 @@
-# Hola Mundo con Typescript
+# Reservas de Asientos de Cine
 
 <!-- hide -->
 > Por [@ehiber](https://github.com/ehiber) y contribuidores de [4Geeks Academy](https://4geeksacademy.com/)
@@ -9,7 +9,16 @@
 *These instructions are available in [english](./README.md).*
 <!-- endhide -->
 
-Empieza a programar un sitio con TypeScript/HTML/CSS en 30 segundos abriendo esta plantilla con [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/typescript-hello) de 4Geeks o en tu computadora local.
+Simulador interactivo de reservas de asientos de cine construido con TypeScript, Vite y Tailwind CSS.
+
+## Que hace este sitio
+
+- Simula una matriz de asientos de cine de 8x10.
+- Permite reservar asientos con entradas de fila y columna.
+- Permite seleccionar asientos directamente haciendo click en la grilla.
+- Opcionalmente permite liberar asientos ocupados.
+- Muestra contadores en vivo de asientos ocupados y disponibles.
+- Detecta y muestra el primer par de asientos adyacentes disponibles.
 
 ## Antes de empezar
 
@@ -19,7 +28,7 @@ Instala los paquetes escribiendo:
 npm install
 ```
 
-## Como ejecuto mi sitio para ver cambios en vivo?
+## Como ejecuto el sitio para ver cambios en vivo?
 
 Escribe en la linea de comandos:
 
@@ -57,17 +66,20 @@ npm run console
 
 Este comando ya viene conectado por defecto a `./src/main.ts`.
 
-## Donde escribo mi codigo?
+## Donde esta la logica principal del proyecto?
 
-Depende del lenguaje:
+Archivos principales que usa la app actualmente:
 
-- `./src/main.ts` para la logica en TypeScript.
-- `./src/style.css` para estilos (Tailwind CSS v4 ya viene importado).
-- `./index.html` para el HTML base.
+- `./index.html` para la estructura base y metadatos.
+- `./src/main.ts` para la logica de reserva y comportamiento UI.
+- `./src/style.css` para la importacion de Tailwind CSS.
+- `./src/vite-env.d.ts` para tipos de Vite en TypeScript.
 
-Puedes agregar mas archivos cuando quieras, solo asegúrate de importarlos desde `main.ts`.
+## Documentacion del proyecto
 
-Nota: si puedes ver la tarjeta de "Hello Rigo" y el mensaje "If you can see this, Tailwind is working.", entonces Tailwind esta configurado correctamente.
+- `./documents/context.md`
+- `./documents/flow-diagram.md`
+- `./documents/technical-demo-guide.md`
 
 ## Solucion de problemas
 
@@ -79,16 +91,6 @@ Si aun no ves cambios, recarga limpiando cache:
 
 - Mac: `Cmd + Shift + R`
 - Windows/Linux: `Ctrl + Shift + R`
-
-## Como incluyo mas imagenes en mi proyecto?
-
-Agregalas dentro de `./public` y referencialas en HTML con `/nombre-imagen.ext`.
-
-Ejemplo:
-
-```html
-<img src="/rigo-baby.jpg" alt="Rigo" />
-```
 
 ## Como incluyo mas archivos TypeScript?
 

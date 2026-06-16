@@ -1,0 +1,13 @@
+# Cinema Seat Reservations
+
+## Summary
+Mobile-first TypeScript cinema seat reservation simulator using an 8x10 matrix.
+
+## Scope
+- Functional programming with arrays and primitive types
+- Seat states: 0 = available, 1 = occupied
+- Console-first simulation output
+
+## Primary Files
+- /src/main.ts
+- /documents/context.md
