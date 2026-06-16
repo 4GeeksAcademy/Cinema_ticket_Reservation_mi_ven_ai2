@@ -1,4 +1,4 @@
-# Technical Demo Guide
+# Technical Guide
 
 ## Project Scope
 
@@ -17,7 +17,7 @@ Cinema seat reservation simulator built with TypeScript + Vite, rendered in the 
 2. Console test runs for an empty-room scenario and logs reservation outcomes.
 3. Dashboard renders with numeric row/column controls, seat grid, counters, and adjacent-seat message.
 
-## Demo Steps (UI)
+## Steps (UI)
 
 1. Start the app with `npm run start`.
 2. Enter row (1-8) and column (1-10), then click Reserve.
